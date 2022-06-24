@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import 'tw-elements';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div class="text-center">
+  <img
+    src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
+    class="rounded-full w-32 mb-4 mx-auto"
+    alt="Avatar"
+  />
+  <h5 class="text-xl text-primary font-medium leading-tight mb-2">John Doe</h5>
+  <p class="text-primary">Web designer</p>
+</div>
     </div>
   );
 }
