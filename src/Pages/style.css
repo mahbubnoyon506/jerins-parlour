@@ -1,7 +1,0 @@
-.tableRow:hover .showOnhover{
-    display: block;
-}
-.showOnhover{
-    position: absolute;
-    display: none;
-}

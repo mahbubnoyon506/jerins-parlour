@@ -1,9 +1,10 @@
 import './App.css';
-import {
-  Routes, Route,} from "react-router-dom";
+import {Routes, Route,} from "react-router-dom";
 import Home from './Pages/Home';
 import Notfound from './Pages/Notfound';
-import Students from './Pages/Students';
+import Students from './Pages/Students/Students';
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         </Route>
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

@@ -2,61 +2,61 @@
     {
         "id": 1,
         "name" : "Sumit",
-        "class" : "8",
+        "classLevel" : "8",
         "score" : "80"
     },
     {
         "id": 2,
         "name" : "Barua",
-        "class" : "7",
+        "classLevel" : "7",
         "score" : "60"
     },
     {
         "id": 3,
         "name" : "Chondon",
-        "class" : "9",
+        "classLevel" : "9",
         "score" : "20"
     },
     {
         "id": 4,
         "name" : "Komal",
-        "class" : "8",
+        "classLevel" : "8",
         "score" : "60"
     },
     {
         "id": 5,
         "name" : "Harshit",
-        "class" : "9",
+        "classLevel" : "9",
         "score" : "95"
     },
     {
         "id": 6,
         "name" : "Vasisth",
-        "class" : "8",
+        "classLevel" : "8",
         "score" : "25"
     },
     {
         "id": 7,
         "name" : "Rohit",
-        "class" : "7",
+        "classLevel" : "7",
         "score" : "75"
     },
     {
         "id": 8,
         "name" : "Shetty",
-        "class" : "9",
+        "classLevel" : "9",
         "score" : "30"
     },
     {
         "id": 9,
         "name" : "Sharma",
-        "class" : "8",
+        "classLevel" : "8",
         "score" : "80"
     },
     {
         "id": 10,
         "name" : "Sham",
-        "class" : "8",
+        "classLevel" : "8",
         "score" : "50"
     }
 ]
