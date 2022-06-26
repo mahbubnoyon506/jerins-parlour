@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteStudent = ({ deleteSudent, setdeleteSudent, refetch }) => {
     const { _id, name, classLevel } = deleteSudent;
     const handleDelete = () => {
-        fetch(`http://localhost:5000/results/${_id}`, {
+        fetch(`https://immense-retreat-09101.herokuapp.com/results/${_id}`, {
             method: 'DELETE',
         })
             .then(res => {

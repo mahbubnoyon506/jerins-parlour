@@ -14,7 +14,7 @@ const UpdateStudent = ({ updateStudent, setUpdateStudent, refetch }) => {
             score: e.target.score.value
         }
         console.log(studentInfo)
-        fetch(`http://localhost:5000/results/${_id}`, {
+        fetch(`https://immense-retreat-09101.herokuapp.com/results/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type' : 'application/json'

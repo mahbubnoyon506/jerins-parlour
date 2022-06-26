@@ -13,7 +13,7 @@ const AddStudent = ({setaddStudentd, refetch}) => {
             classLevel: e.target.class.value,
             score: e.target.score.value
         }
-        fetch('http://localhost:5000/results', {
+        fetch('https://immense-retreat-09101.herokuapp.com/results', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

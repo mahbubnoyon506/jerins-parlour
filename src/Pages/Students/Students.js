@@ -12,7 +12,7 @@ const Students = () => {
     const [updateStudent, setUpdateStudent] = useState(null)
     const [deleteSudent, setdeleteSudent] = useState(null)
     const { data: results, isLoading, refetch } = useQuery('results', () =>
-        fetch('http://localhost:5000/results')
+        fetch('https://immense-retreat-09101.herokuapp.com/results')
             .then(res => {
                 return res.json()            
             })

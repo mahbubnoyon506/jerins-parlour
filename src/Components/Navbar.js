@@ -24,7 +24,7 @@ const Navbar = () => {
                 <label htmlFor="my-drawer" className="drawer-overlay"></label>
                 <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                 <h1 className='text-2xl text-primary text-center font-bold border-b-2 pb-10 mb-5'>School Space</h1>
-                    <li><Link className='hover:text-primary' to='#'> <TbLayoutDashboard></TbLayoutDashboard> Dashboard</Link></li>
+                    <li><Link className='hover:text-primary' to='/'> <TbLayoutDashboard></TbLayoutDashboard> Dashboard</Link></li>
                     <li><Link className='hover:text-primary' to='#'> <SiBookstack></SiBookstack> Courses</Link></li>
                     <li><Link className='hover:text-primary' to='/students'> <BsFillPeopleFill></BsFillPeopleFill> Students</Link></li>
                     <li><Link className='hover:text-primary' to='#'> <TbWriting></TbWriting> Exam</Link></li>
