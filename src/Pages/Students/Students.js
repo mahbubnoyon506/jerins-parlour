@@ -5,16 +5,15 @@ import AddStudent from './AddStudent';
 import DeleteStudent from './DeleteStudent';
 import StudentsTableRow from './StudentsTableRow';
 import UpdateStudent from './UpdateStudent';
-
+import { MdOutlineAdd } from "react-icons/md";
 
 const Students = () => {
     const [addStudentd, setaddStudentd] = useState(null)
     const [updateStudent, setUpdateStudent] = useState(null)
     const [deleteSudent, setdeleteSudent] = useState(null)
     const { data: results, isLoading, refetch } = useQuery('results', () =>
-        fetch('results.json')
+        fetch('http://localhost:5000/results')
             .then(res => {
-                console.log(res)
                 return res.json()            
             })
     )
@@ -29,13 +28,13 @@ if(isLoading){
         <div className='pt-5 px-5'>
             <div className='flex justify-between mb-5'>
                 <h2 className='text-lg'>Students</h2>
-                <label onClick={setaddStudentd} for="addStudent" className='btn btn-primary px-10 text-base-100'>open modal</label>
+                <label onClick={setaddStudentd} for="addStudent" className='btn btn-primary px-10 text-base-100'> <MdOutlineAdd></MdOutlineAdd> ADD</label>
             </div>
                 {
-                  addStudentd && <AddStudent setaddStudentd={setaddStudentd}></AddStudent>  
+                  addStudentd && <AddStudent setaddStudentd={setaddStudentd} refetch={refetch}></AddStudent>  
                 }
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -51,7 +50,7 @@ if(isLoading){
                     <tbody>
                         {
                             results.map((result, index) => 
-                               <StudentsTableRow result={result} index={index} setUpdateStudent={setUpdateStudent} setdeleteSudent={setdeleteSudent}></StudentsTableRow>
+                               <StudentsTableRow key={result._id} result={result} index={index} setUpdateStudent={setUpdateStudent} setdeleteSudent={setdeleteSudent} ></StudentsTableRow>
                             )
                         }
                     </tbody>

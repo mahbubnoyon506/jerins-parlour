@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Notfound from './Pages/Notfound';
 import Students from './Pages/Students/Students';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
