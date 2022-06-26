@@ -1,6 +1,6 @@
 # School Space
 
-Project Live on [School Space]().
+Project Live on [School Space](https://schoolspaces.netlify.app/).
 
 ## Feature
 *New student add function
