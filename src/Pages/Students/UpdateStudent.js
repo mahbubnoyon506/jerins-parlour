@@ -13,7 +13,7 @@ const UpdateStudent = ({ updateStudent, setUpdateStudent, refetch }) => {
             classLevel: e.target.class.value,
             score: e.target.score.value
         }
-        console.log(studentInfo)
+        
         fetch(`https://immense-retreat-09101.herokuapp.com/results/${_id}`, {
             method: 'PUT',
             headers: {
@@ -42,9 +42,6 @@ const UpdateStudent = ({ updateStudent, setUpdateStudent, refetch }) => {
     }
     return (
         <div>
-
-           
-
 
             <input type="checkbox" id="updateStudent" className="modal-toggle" />
             <div className="modal">
